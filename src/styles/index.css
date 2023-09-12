@@ -10,3 +10,75 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 2px solid rgba(128, 128, 128, 0.357);
+    
+}
+h1 {
+    text-align: center;
+    color: gray;
+    text-shadow:2px 2px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+ }
+ul li{
+  
+    border: 1px solid rgba(242, 242, 238, 0.838)
+  
+    
+}
+
+.TodoForm {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .todo-input {
+    width: 80%;
+  }
+
+  .List li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(242, 242, 238, 0.838);
+    padding: 10px;
+  }
+  
+  .List li label {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .List li .btn-delete {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .List li .btn-delete span {
+    margin-right: 10px;
+  }
+  
+  .List li .btn-delete i {
+    display: none;
+    color: rgba(195, 167, 64, 0.301);
+
+  }
+ li:hover .btn-delete i{
+    display:inline-block;
+  }
+
+
+
+ 
+  
