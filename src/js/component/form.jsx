@@ -55,7 +55,10 @@ const Form = () => {
     setTodos(updatedTodos);
   };
   return (
-    <div className="container d-flex">
+    <div className="wrapper">
+     <div className="row">
+        <div className="container col-sm-8">
+
       <h1>Todos</h1>
 
       <form className="TodoForm" onSubmit={handleSubmit}>
@@ -71,6 +74,7 @@ const Form = () => {
           Submit
         </button>
       </form>
+      </div>
 
       <ul className="List">
         {todos.map((item, index) => (
@@ -86,6 +90,7 @@ const Form = () => {
         ))}
       </ul>
       <div>{todos.length}</div>
+    </div>
     </div>
   );
 };
